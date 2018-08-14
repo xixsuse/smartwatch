@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "299674159470",
+    "firebase_url": "https://tcs-smart-watch.firebaseio.com",
+    "project_id": "tcs-smart-watch",
+    "storage_bucket": "tcs-smart-watch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299674159470:android:006415b0bf6d143d",
+        "android_client_info": {
+          "package_name": "com.tcs.sonusourav.smartwatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "299674159470-s4iu4uf2cunsuinanhbo7b7f17p1g5h6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tcs.sonusourav.smartwatch",
+            "certificate_hash": "c0f9d06f246b12fe614fc25161094c8eeb83b132"
+          }
+        },
+        {
+          "client_id": "299674159470-ifjme0nracb735smvrk4dvn4mqnqho8f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHXGigSJRYXwGpX916d1hbIlU8crFNGnc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "299674159470-ifjme0nracb735smvrk4dvn4mqnqho8f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        android:text="@string/otp_msg"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+       />
+
+    <TextView
+        android:id="@+id/tv_mobile_no_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/mobile_no"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="@string/verification_code"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/otp_et"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:letterSpacing="0.8"
+        android:maxLength="6"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:focusable="true"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/sign_up_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:gravity="center_horizontal"
+        android:text="@string/invalid_otp"
+        android:textColor="@color/wrong_credentials_color"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:elevation="50dp"
+        >
+
+
+
+        <Button
+            android:id="@+id/resend_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/curved_button"
+            android:backgroundTint="@color/wrong_credentials_color"
+            android:text="Resend"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:elevation="30dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <Button
+            android:id="@+id/verify_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/curved_button"
+            android:backgroundTint="@color/text_blue"
+            android:text="Verify"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:elevation="30dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/signin_progressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="40dp"
+        android:visibility="gone" />
+
+</LinearLayout>

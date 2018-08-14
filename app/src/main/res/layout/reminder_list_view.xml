@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/reminder_lv_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:padding="8dp"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <Switch
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignRight="@id/reminder_lv_text_view"
+        android:layout_alignTop="@+id/reminder_lv_text_view"
+        android:layout_marginEnd="65dp"
+        android:layout_toStartOf="@id/reminder_btn"
+        android:theme="@style/SwitchTheme" />
+
+    <Button
+        android:id="@+id/reminder_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@id/reminder_lv_text_view"
+        android:layout_alignTop="@id/reminder_lv_text_view"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Delete"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+</RelativeLayout>

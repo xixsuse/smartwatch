@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LauncherActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/RP_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="60dp"
+        android:gravity="center_horizontal"
+            android:text="@string/RP_1"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/RP_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RP_1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="60dp"
+            android:gravity="center_horizontal"
+            android:text="@string/RP_2"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_mob_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RP_2"
+            android:layout_marginStart="60dp"
+            android:gravity="center_horizontal"
+            android:text="@string/mobile_no"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/RP_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_mob_no"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="60dp"
+            android:gravity="center_horizontal"
+            android:text="@string/RP_3"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:text="Verification Code"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:hint="eg. 1234"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:focusable="false"
+        android:text="New Password"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:focusable="false"
+        android:hint="example@123"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:focusable="false"
+        android:text="Confirm Password"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:focusable="false"
+        android:hint="example@123"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button_sign_in"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/curved_button"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/sign_in"
+        android:textColor="@color/white" />
+</LinearLayout>

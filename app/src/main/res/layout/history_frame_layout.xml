@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_back">
+
+    <FrameLayout
+        android:id="@+id/history_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        >
+    </FrameLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/history_spinner"
+            android:entries="@array/history"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:spinnerMode="dropdown"
+            android:gravity="start"
+            >
+
+        </Spinner>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:backgroundTint="@color/grey"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical|end"
+        android:layout_marginStart="10dp"
+
+        >
+        <ImageButton
+            android:id="@+id/his_date_picker"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/icon_calendar"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/hb_date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:hint="Jump to date"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="17sp"
+            android:textColor="@color/text_blue"
+            android:textColorHint="@color/text_blue" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</RelativeLayout>

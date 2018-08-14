@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:layout_gravity="center_horizontal"
+    >
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/circular_ring"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hr_result_tv"
+        android:text="  88  "
+        android:textSize="50sp"
+        android:textColor="@color/text_blue"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" bpm "
+        android:textSize="40sp"
+        android:textColor="@color/text_blue"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="55dp"
+        />
+
+</FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heart Rate is normal"
+        android:textSize="15sp"
+        android:textColor="@color/text_blue"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hr_result_time_tv"
+        android:text="Time"
+        android:textSize="15sp"
+        android:textColor="@color/text_blue"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="77"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:paddingStart="10dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="87"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:paddingEnd="8dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Minimum"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:paddingStart="10dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+           android:layout_weight="5" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Maximum"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:paddingEnd="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_weight="5"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/hr_share_button"
+        android:text="Share"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:drawableStart="@drawable/icon_share"
+        android:textColor="@color/white"
+        android:background="@drawable/curved_blue_button"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:paddingEnd="90dp"
+        />
+
+
+</LinearLayout>

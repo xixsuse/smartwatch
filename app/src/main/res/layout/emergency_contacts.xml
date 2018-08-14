@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tcs.sonusourav.smartwatch.EmergencyContactsActivity">
+
+    <ListView
+        android:id="@+id/ec_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:paddingStart="10dp"
+        android:scrollbars="vertical"
+        android:textAlignment="textStart"
+        >
+
+    </ListView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/text_blue"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_add_contacts"
+        app:fabSize="auto"
+        app:fab_colorDisabled="@color/colorPrimaryDark"
+        app:pressedTranslationZ="15dp"
+
+        />
+
+
+</RelativeLayout>

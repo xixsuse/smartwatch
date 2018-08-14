@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:id="@+id/profile_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:focusable="false"
+        android:paddingLeft="10dp"
+        android:text="Name"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/profile_et1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="3dp"
+        android:enabled="false"
+        android:hint="@string/your_name"
+        android:inputType="textCapCharacters"
+        android:paddingEnd="10dp"
+        android:paddingStart="12dp"
+        android:textSize="17sp"
+        android:textStyle="normal" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/profile_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginStart="40dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingLeft="10dp"
+            android:text="Date of Birth"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/ib_date_picker"
+            android:layout_width="35dp"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@id/profile_et2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="60dp"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_date_picker" />
+
+        <EditText
+            android:id="@+id/profile_et2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/profile_tv2"
+            android:layout_marginEnd="55dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="3dp"
+            android:enabled="false"
+            android:hint="@string/profile_d_o_b"
+            android:inputType="date"
+            android:paddingEnd="10dp"
+            android:paddingStart="12dp"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/profile_tv3"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="40dp"
+        android:focusable="false"
+        android:paddingStart="10dp"
+        android:text="Gender"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/_profile_spin_gender"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="3dp"
+        android:entries="@array/gender"
+        android:soundEffectsEnabled="true"
+        android:spinnerMode="dropdown">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/profile_tv4"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:focusable="false"
+        android:paddingEnd="10dp"
+        android:paddingStart="12dp"
+        android:text="Phone"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/profile_et4"
+            android:layout_width="265dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="3dp"
+            android:enabled="false"
+            android:inputType="phone"
+            android:paddingStart="12dp"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/iv_verify"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="80dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/settings_profile_verify_icon"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@id/iv_verify"
+            android:layout_marginStart="3dp"
+            android:layout_toRightOf="@id/iv_verify"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:text="@string/verified"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/profile_tv5"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="40dp"
+        android:focusable="false"
+        android:paddingStart="10dp"
+        android:text="Email Id"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/profile_et5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="3dp"
+        android:enabled="false"
+        android:inputType="textEmailAddress"
+        android:paddingEnd="10dp"
+        android:paddingStart="12dp"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/profile_tv6"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="40dp"
+        android:focusable="false"
+        android:paddingStart="10dp"
+        android:text="Medical Issue"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+
+        />
+
+    <EditText
+        android:id="@+id/profile_et6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="3dp"
+        android:enabled="false"
+        android:inputType="textMultiLine"
+        android:paddingEnd="10dp"
+        android:paddingStart="12dp"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/profile_edit_button"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/curved_button"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Edit"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <ProgressBar
+        android:id="@+id/profile_progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="5dp"
+        android:visibility="visible" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/images_background"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Keep the band connected to the  phone"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        />
+
+    <com.shinelw.library.ColorArcProgressBar
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:id="@+id/hb_progress_bar"
+        android:layout_marginTop="20dp"
+        app:front_color1="@color/colorAccent"
+        app:front_color2="#9fe7f5"
+        app:front_color3="#ffffff"
+        app:max_value="100 "
+        app:current_value="0 "
+        app:back_width="5dp"
+        app:front_width="20dp"
+        app:total_engle="360"
+        android:foregroundTint="@color/white"
+        app:back_color="@color/white"
+        android:backgroundTint="@color/white"
+        android:foregroundGravity="center"
+        app:is_need_content="true"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heartbeat_cancel_btn"
+        android:text="@string/cancel"
+        android:textSize="25sp"
+        android:background="@drawable/curved_button"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text_blue"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textAllCaps="false"/>
+
+
+</LinearLayout>

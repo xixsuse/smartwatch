@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="20"
+    android:background="@color/white"
+    android:layout_marginBottom="3dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="12">
+
+
+        <TextView
+            android:id="@+id/hb_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="   Date   "
+            android:textColor="@color/grey"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hb_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/hb_date_tv"
+            android:gravity="center"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="    Time   "
+            android:textColor="@color/grey"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hb_description_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hb_date_tv"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="start"
+            android:paddingEnd="1dp"
+            android:paddingStart="6dp"
+            android:text="   Description   "
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hb_value_tv"
+            android:text=" 88"
+            android:textColor="@color/text_blue"
+            android:gravity="top"
+            android:layout_marginStart="10dp"
+            android:textSize="30sp"
+            android:paddingStart="3dp"
+            android:paddingEnd="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hb_bpm"
+            android:text="bpm "
+            android:textColor="@color/text_blue"
+            android:gravity="top"
+            android:layout_below="@id/hb_value_tv"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            android:paddingStart="3dp"
+            android:paddingEnd="3dp"
+            android:layout_marginBottom="8dp"
+            />
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/hb_share_btn"
+            android:src="@drawable/icon_share"
+            android:background="@color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@id/hb_bpm"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:scaleType="centerInside"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+</LinearLayout>
